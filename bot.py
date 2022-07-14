@@ -18,7 +18,7 @@ from aiogram.utils.exceptions import MessageNotModified
 from contextlib import suppress
 
 # Объект бота, подключается к созданному в @BotFather в Telegram боту по токену
-bot = Bot(token=cfg.BOT_TOKEN)
+bot = Bot(token=BOT_TOKEN)
 # Хранилище для FSM
 storage = MemoryStorage()
 # Диспетчер для бота, который будет отслеживать все сообщения от пользователя
