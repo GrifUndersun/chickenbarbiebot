@@ -1,1 +1,5 @@
 aiogram==2.20
+beautifulsoup4==4.10.0
+bs4==0.0.1
+requests==2.25.1
+aioschedule==0.5.2
