@@ -5,6 +5,7 @@ import asyncio  # для написания асинхронного кода
 import config as cfg  #
 import parse_timetable as pt  # для получения расписания с сайта http://ruz.narfu.ru
 import parse_weather as weather  # для получения погоды с сайта http://openwethermap.org
+import os
 
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher import FSMContext
@@ -18,7 +19,7 @@ from aiogram.utils.exceptions import MessageNotModified
 from contextlib import suppress
 
 # Объект бота, подключается к созданному в @BotFather в Telegram боту по токену
-bot = Bot(token=BOT_TOKEN)
+bot = Bot(token = os.environ['BOT_TOKEN'])
 # Хранилище для FSM
 storage = MemoryStorage()
 # Диспетчер для бота, который будет отслеживать все сообщения от пользователя
